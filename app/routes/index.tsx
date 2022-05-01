@@ -7,12 +7,12 @@ import qr5 from "~/qr/5.png"
 import qr6 from "~/qr/6.png"
 
 const scooters = [
-  { qrSrc: qr1 },
-  { qrSrc: qr2 },
-  { qrSrc: qr3 },
-  { qrSrc: qr4 },
-  { qrSrc: qr5 },
-  { qrSrc: qr6 },
+  { qrSrc: qr1, name: "Frederiksberg Have Scooter" },
+  { qrSrc: qr2, name: "Glahns Scooter" },
+  { qrSrc: qr3, name: "ITU Scooter" },
+  { qrSrc: qr4, name: "Fields Scooter" },
+  { qrSrc: qr5, name: "Lufthavn Scooter" },
+  { qrSrc: qr6, name: "Planetarium Scoot" },
 ]
 
 export default function Index() {
@@ -48,8 +48,11 @@ export default function Index() {
         </button>
       </div>
       <h2>
-        Scooter {currentScooter + 1} of {scooters.length}
+        {scooters[currentScooter].name}
       </h2>
+      <p>
+        Scooter {currentScooter + 1} of {scooters.length}
+      </p>
       <img
         src={scooters[currentScooter].qrSrc}
         alt={`Scooter ${currentScooter + 1}`}
