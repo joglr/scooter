@@ -12,7 +12,7 @@ const scooters = [
   { qrSrc: qr3, name: "ITU Scooter" },
   { qrSrc: qr4, name: "Fields Scooter" },
   { qrSrc: qr5, name: "Lufthavn Scooter" },
-  { qrSrc: qr6, name: "Planetarium Scoot" },
+  { qrSrc: qr6, name: "Planetarium Scooter" },
 ]
 
 export default function Index() {
